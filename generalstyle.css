@@ -1,0 +1,18 @@
+/*css page for the rest of the website, excluding landing page*/
+.float_middle_text {
+	margin: auto;
+	display: block;
+	width: 600px;
+	text-align: justify;
+	font-family: sans-serif;
+	color: #040654;
+	font-size: small;
+}
+.headings {
+  margin: auto;
+	display: block;
+  text-align: justify;
+  font-family: sans-serif;
+  color: #040654;
+  font-size: 32px;
+}
