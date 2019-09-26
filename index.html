@@ -1,30 +1,67 @@
 <!-- index.html -->
-<!-- Version: 0.1.2 -->
+<!-- Version: 0.2.0 -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Dunedin History</title>
+	<title>Dunedin History | Home</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Style -->
     <link href="main_style.css" rel="stylesheet" type="text/css">
+    <link href="nav_style.css" rel="stylesheet" type="text/css">
+    <link href="index_style.css" rel="stylesheet" type="text/css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Favicon -->
 	<link rel="icon" href="images/favicom/favicom_v2.png">
 </head>
 <body>
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile_nav">
+        <img src="images/nav_logo_v1.png" alt="Nav Logo" class="mobile_nav_logo">plc_hldr
+        <div id="mobile_links">
+            <a href="index.html"  class="active">Home</a>
+            <a href="">Blank</a>
+            <a href="">Blank</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="mobileFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+    function mobileFunction() {
+      var x = document.getElementById("mobile_links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 	<nav>
 		<ul>
             <li class="nav_float_left">
 				<img src="images/nav_logo_v1.png" alt="Nav Logo" class="nav_logo">
 			</li>
+            <li>
+				<a href="">Blank</a>
+			</li>
+            <li>
+				<a href="">Blank</a>
+			</li>
 			<li>
-				<a href="index.html">Home</a>
+				<a href="index.html" class="active">Home</a>
 			</li>
 		</ul>
 	</nav>
+
     <div class="main_content">
-        <h1>Dunedin, the glorious town of students</h1>
+        <a href="https://blogs.otago.ac.nz/international/files/2018/11/dunedin-aerial-.jpg" target="_blank" title="Source: https://blogs.otago.ac.nz/international/files/2018/11/dunedin-aerial-.jpg">
+            <div class="parallax_index"></div>
+        </a>
+
+        <h1>Dunedin, the Glorious Town of Students</h1>
 
     	<div class="">
     		<p>Dunedin was once a goldrush town, however, after borrowing (perminantly) the gold from central otago leaving various moonscapes etc, Dunedin needed a new form of boom and bust. So, Dunedin is as we know it today, the gloryios home of the brave, traffic cone wearing students.</p>

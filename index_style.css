@@ -1,0 +1,40 @@
+/* CSS Document */
+
+@charset "utf-8";
+
+/*---- Paralax ----*/
+
+.parallax_index {
+  /* The image used */
+  background-image: url("images/dunedin_aerial.jpg");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*---- Scaling ----*/
+/*-- Mobile --*/
+
+.parallax_index {
+    /* Set a specific height */
+    min-height: 300px;
+}
+
+/*-- Tablets --*/
+@media only screen and (min-width: 600px) {
+    .parallax_index {
+        /* Set a specific height */
+        min-height: 350px;
+    }
+}
+
+/*-- Laptop & Desktop --*/
+@media only screen and (min-width: 768px) {
+    .parallax_index {
+        /* Set a specific height */
+        min-height: 400px;
+    }
+}
