@@ -6,13 +6,23 @@
 	text-align: justify;
 	font-family: sans-serif;
 	color: #040654;
-	font-size: small;
+	font-size: 20px;
 }
-.headings {
+h1 {
   margin: auto;
 	display: block;
+	Width: 600px;
   text-align: justify;
   font-family: sans-serif;
   color: #040654;
   font-size: 32px;
+}
+h2 {
+	margin: auto;
+	display: block;
+	width: 600px;
+	text-align: justify;
+	font-family: sans-serif;
+	color: #040654;
+	font-size: 24px;
 }

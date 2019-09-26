@@ -19,7 +19,7 @@ body {
 
 /*---- Body Content ----*/
 
-.content {
+.box {
     top: 50px;
     bottom: 50px;
     display: block;
@@ -33,15 +33,20 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.content h1 {
+.content {
     color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+	font-size: medium;
     text-align: center;
-    font-family: 'Noto Sans', sans-serif;
+    top: 200px;
+    display: block;
+    position: fixed;
 }
 
-.content p {
-	margin: 10px;
-    text-align: center;
+.content_img_title img {
+    top: 90px;
+    display: block;
+    position: fixed;
 }
 
 .reference {
@@ -67,23 +72,41 @@ body {
 
 /*---- Scaling ----*/
 /*-- Mobile --*/
-.content {
+.box, .content, .content_img_title img {
     left: 5%;
     right: 5%;
 }
 
+.content_img_title img {
+    left: 7.5%;
+    right: 7.5%;
+    width: 85%;
+}
+
 /*-- Tablets --*/
 @media only screen and (min-width: 600px) {
-    .content {
+    .box, .content {
         left: 10%;
         right: 10%;
+    }
+
+    .content_img_title img {
+        left: 15%;
+        right: 15%;
+        width: 70%;
     }
 }
 
 /*-- Laptop & Desktop --*/
 @media only screen and (min-width: 768px) {
-    .content {
+    .box, .content {
         left: 20%;
         right: 20%;
+    }
+
+    .content_img_title img {
+        left: 30%;
+        right: 30%;
+        width: 40%;
     }
 }
