@@ -1,0 +1,96 @@
+/* CSS Document */
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/*---- Body ----*/
+
+body {
+    width: 100%;
+    margin: auto;
+    backgroun-color: #FFFFFF;
+}
+
+/*---- Page Content ----*/
+
+.main_content {
+    margin: auto;
+    color: #111111;
+    font-family: 'Open Sans', sans-serif;
+	font-size: medium;
+    text-align: justify;
+    padding-bottom: 0;
+}
+
+/*---- Nav ----*/
+
+.nav_float_left {
+	float: left;
+}
+
+.nav_logo {
+	padding-top: 40px;
+	width: 250px;
+	padding-left: 20px;
+}
+
+/*---- Footer ----*/
+
+footer {
+	background-color: #111111;
+	color: #FFFFFF;
+	text-align: center;
+	height: 100px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	margin-top: 30px;
+}
+
+.footer_nav_links a {
+    color: #FFFFFF;
+	text-decoration: none;
+}
+
+.footer_nav_links a:hover {
+	text-decoration: underline;
+}
+
+.footer_external_links ul {
+    list-style-type: none;
+    margin: auto;
+	padding-top: 15px;
+	overflow: hidden;
+}
+
+.footer_external_links a {
+    padding: 5px;
+    color: #FFFFFF;
+	text-decoration: none;
+
+}
+
+.footer_external_links a:hover {
+    text-decoration: underline;
+}
+
+/*---- Scaling ----*/
+/*-- Mobile --*/
+.main_content {
+    width: 90%;
+ }
+
+/*-- Tablets --*/
+@media only screen and (min-width: 600px) {
+    .main_content {
+        width: 75%;
+    }
+}
+
+/*-- Laptop & Desktop --*/
+@media only screen and (min-width: 768px) {
+    .main_content {
+        width: 60%;
+    }
+}
