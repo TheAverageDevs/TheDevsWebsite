@@ -75,10 +75,10 @@
 }
 
 .nav_logo {
-	padding-top: 20px;
+    padding-top: 25px;
 	margin-left: 15px;
-	max-width: 250px;
-	height: auto;
+	width: auto;
+	height: 60px;
     float: left;
 }
 
