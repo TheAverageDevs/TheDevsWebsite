@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Dunedin History | Studentville</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Style -->
+    <link href="main_style.css" rel="stylesheet" type="text/css">
+    <link href="nav_style.css" rel="stylesheet" type="text/css">
+    <link href="index_style.css" rel="stylesheet" type="text/css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Favicon -->
+	<link rel="icon" href="images/favicom/favicom_v2.png">
+</head>
+<body>
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile_nav">
+        <img src="images/nav_logo_v1.png" alt="Nav Logo" class="mobile_nav_logo">
+        <div id="mobile_links">
+            <a href="index.html"  class="active">Home</a>
+            <a href="">Blank</a>
+            <a href="">Blank</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="mobileFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+    function mobileFunction() {
+      var x = document.getElementById("mobile_links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+	<div class="nav">
+		<img src="images/nav_logo_v1.png" alt="Nav Logo" class="nav_logo">
+		<a href="">Blank</a>
+		<a href="">Blank</a>
+		<a href="index.html" class="active">Home</a>
+	</div>
+    <div class="main_content">
+        <h1>Dunedin, the Glorious Town of Students</h1>
+    		<p>Studentville. Where little timmy went and wasted his time dieing of cold instead
+        of actually doing useful things like studying, or, getting a girlfreind.</p>
+    		<br>
+    		<h2>Notable places in Dunedin</h2>
+    		<p>Studentville. a place full of broken hovels that are condemned but
+          students still live There anyways because they are not particularly intelligent.
+        Also, because they are cheapskates that get all nutrient content through cheap
+      spirits and V.</p>
+      <p>Follow this link to get more knowledge on where studentville is located than anyone
+      (except for you, you gloryios barstad) wanted to know. <a href="https://goo.gl/maps/d6yu4NqvgtspN49NA">Hyde street, centre of neevle</a>
+    Go to streetview- If you dare...</p>
+    </div>
+	<footer>
+        <div class="footer_nav_links">
+            <a href="index.html">Home</a> | <a href="">Blank</a> | <a href="">Blank</a>
+        </div>
+		<p>Site developed and maintained by TheWebDev Team (c) 2019</p>
+		<p>Contact us at TheAverageDevs@gmail.com :P</p>
+        <div class="footer_external_links">
+            <a href="landing_page.html" target="_blank">Landing Page</a>
+            <a href="https://github.com/Beneficial-Insurance/TheDevsWebsite" target="_blank">GitHub Repository</a>
+        </div>
+	</footer>
+</body>
+</html>
