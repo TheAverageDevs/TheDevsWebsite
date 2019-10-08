@@ -2,6 +2,13 @@
 
 @charset "utf-8";
 
+/*---- Map ----*/
+
+.map {
+    width: 100%;
+    border: 0;
+}
+
 /*---- Paralax ----*/
 
 .parallax_index {
@@ -23,11 +30,19 @@
     min-height: 300px;
 }
 
+.map {
+    height: 200px;
+}
+
 /*-- Tablets --*/
 @media only screen and (min-width: 600px) {
     .parallax_index {
         /* Set a specific height */
         min-height: 350px;
+    }
+
+    .map {
+        height: 200px;
     }
 }
 
@@ -36,5 +51,9 @@
     .parallax_index {
         /* Set a specific height */
         min-height: 400px;
+    }
+
+    .map {
+        height: 450px;
     }
 }

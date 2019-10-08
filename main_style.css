@@ -49,7 +49,7 @@ footer {
 	height: 100px;
 	width: 100%;
 	padding-top: 10px;
-	padding-bottom: 60px;
+	padding-bottom: 80px;
 	margin-top: 30px;
 }
 
@@ -63,8 +63,8 @@ footer {
 }
 
 .footer_external_links {
-	padding-top: 15px;
-    margin: auto;
+	padding-top: 10px;
+    margin: 0 auto;
     width: 100%;
 }
 
