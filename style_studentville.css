@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*---- Paralax ----*/
+
+.parallax_studentville {
+  /* The image used */
+  background-image: url("images/dcc_flickr_img/14678386804_7cfe924d92_o.jpg");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*---- Scaling ----*/
+/*-- Mobile --*/
+
+.parallax_studentville {
+    /* Set a specific height */
+    min-height: 300px;
+}
+
+/*-- Tablets --*/
+@media only screen and (min-width: 600px) {
+    .parallax_studentville {
+        /* Set a specific height */
+        min-height: 350px;
+    }
+}
+
+/*-- Laptop & Desktop --*/
+@media only screen and (min-width: 768px) {
+    .parallax_studentville {
+        /* Set a specific height */
+        min-height: 400px;
+    }
+}
