@@ -29,6 +29,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #111111;
 }
 
+.img_note, .img_note a:visited {
+    width: 95%;
+    margin: auto;
+    color: #ddd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    text-align: left;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
 /*---- Footer ----*/
 
 footer {
