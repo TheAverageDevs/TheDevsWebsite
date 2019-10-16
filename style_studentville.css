@@ -1,17 +1,10 @@
+@charset "utf-8";
 /* CSS Document */
 
-@charset "utf-8";
-
-/*---- Map ----*/
-
-.map {
-    width: 100%;
-    border: 0;
-}
 
 /*---- Paralax ----*/
 
-.parallax_index {
+.parallax_studentville {
   /* The image used */
   background-image: url("images/dcc_flickr_img/14678386804_7cfe924d92_o.jpg");
 
@@ -25,35 +18,23 @@
 /*---- Scaling ----*/
 /*-- Mobile --*/
 
-.parallax_index {
+.parallax_studentville {
     /* Set a specific height */
     min-height: 300px;
 }
 
-.map {
-    height: 200px;
-}
-
 /*-- Tablets --*/
 @media only screen and (min-width: 600px) {
-    .parallax_index {
+    .parallax_studentville {
         /* Set a specific height */
         min-height: 350px;
-    }
-
-    .map {
-        height: 200px;
     }
 }
 
 /*-- Laptop & Desktop --*/
 @media only screen and (min-width: 768px) {
-    .parallax_index {
+    .parallax_studentville {
         /* Set a specific height */
         min-height: 400px;
-    }
-
-    .map {
-        height: 450px;
     }
 }
