@@ -47,81 +47,43 @@
 /*---- Standard Navbar ----*/
 
 .nav {
-    overflow: hidden;
-    background-color: #111;
-    top: 0;
-    position: sticky;
-}
-
-#dorpdown_links {
-    display: none;
-	background-color: #111;
-	width: 200px;
-	top: 100px;
-	float: right;
 	position: sticky;
-	border-radius: 0 0 0 10px;
+	top: 0;
 }
 
-#dorpdown_links a {
-	font-size: 20px;
+.nav {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #111;
+}
+
+.nav a {
+	font-size: 120%;
 	font-family: 'Noto Sans', sans-serif;
 	display: block;
 	color: #FFFFFF;
 	text-align: center;
-	padding: 20px 12px ;
+	padding: 45px 16px ;
 	text-decoration: none;
+    float: right;
 }
 
-#dorpdown_links a:hover {
+.nav a:hover {
 	background-color: #ddd;
     color: #111;
-}
-
-#dorpdown_links #last:hover {
-	border-radius: 0 0 0 10px;
-	background-color: #ddd;
-    color: #111;
-}
-
-.nav a {
-	text-decoration: none;
-	padding: 20px;
-	border-radius: 5px;
-	color: #FFFFFF;
-}
-
-.nav a.icon {
-    background: #FFFFFF;
-    color: #111;
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 20px;
-}
-
-.nav a.icon:hover {
-	background-color: gray; /*456A76*/
-    color: #FFFFFF;
 }
 
 .nav_logo {
-	padding: 25px 0 15px 0;
+    padding-top: 25px;
 	margin-left: 15px;
 	width: auto;
 	height: 60px;
     float: left;
 }
 
-.bar {
-	display: block;
-	width: 100%;
-	height: 10px;
-	background-color: #969696;
-}
-
 /*--- Active class ---*/
-
+/* Changes background-color for the link of the current page you are on */
 .active {
 	background-color: darkgray;
 }

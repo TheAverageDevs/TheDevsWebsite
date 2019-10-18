@@ -49,17 +49,13 @@ footer {
 	height: 100px;
 	width: 100%;
 	padding-top: 10px;
+	padding-bottom: 80px;
 	margin-top: 30px;
-}
-
-footer p {
-    margin: 10px 10px 0 10px;
 }
 
 .footer_nav_links a {
     color: #FFFFFF;
 	text-decoration: none;
-    margin: 0 10px;
 }
 
 .footer_nav_links a:hover {
@@ -88,20 +84,12 @@ footer p {
 /*-- Mobile --*/
 .main_content {
     width: 90%;
-}
-
-footer {
-    padding-bottom: 100px;
-}
+ }
 
 /*-- Tablets --*/
 @media only screen and (min-width: 600px) {
     .main_content {
         width: 75%;
-    }
-
-    footer {
-        padding-bottom: 100px;
     }
 }
 
@@ -109,9 +97,5 @@ footer {
 @media only screen and (min-width: 768px) {
     .main_content {
         width: 60%;
-    }
-
-    footer {
-        padding-bottom: 100px;
     }
 }
