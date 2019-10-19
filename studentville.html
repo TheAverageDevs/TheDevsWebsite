@@ -18,31 +18,80 @@
     <div class="mobile_nav">
         <img src="images/nav_logo_v1.png" alt="Nav Logo" class="mobile_nav_logo">
         <div id="mobile_links">
-            <a href="index.html"  class="active">Home</a>
-            <a href="studentville.html">Student Life</a>
-            <a href="logan_park.html">Dunedin Schools (LP)</a>
+            <a href="index.html">Home</a>
+            <a href="studentville.html" class="active">Student Life</a>
+            <a href="javascript:void(0);" onClick="mobileprojectFunction()">Dunedin Schools<img src="images/arrow_left.png" id="left" class="arrow_mobile"><img src="images/arrow_right.png" id="right" class="arrow_mobile"></a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="mobileFunction()">
             <i class="fa fa-bars"></i>
         </a>
+        <div id="mobile_fold_out">
+            <a href="obhs.html">OBHS</a>
+            <a href="oghs.html">OGHS</a>
+            <a href="kings.html">Kings</a>
+            <a href="queens.html">Queens</a>
+            <a href="logan_park.html">Logan Park</a>
+        </div>
     </div>
-
     <script>
-    function mobileFunction() {
-      var x = document.getElementById("mobile_links");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
+        function mobileFunction() {
+          var x = document.getElementById("mobile_links");
+          var p = document.getElementById("mobile_fold_out");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            p.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+
+        function mobileprojectFunction() {
+          var x = document.getElementById("mobile_fold_out");
+          var d = document.getElementById("left");
+          var u = document.getElementById("right");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            d.style.display = "inline";
+            u.style.display = "none";
+          } else {
+            x.style.display = "block";
+            d.style.display = "none";
+            u.style.display = "inline";
+          }
+        }
     </script>
-	<div class="nav">
-		<img src="images/nav_logo_v1.png" alt="Nav Logo" class="nav_logo">
-		<a href="logan_park.html">Dunedin Schools (LP)</a>
-		<a href="studentville.html" class="active">Student Life</a>
-		<a href="index.html">Home</a>
-	</div>
+    <!-- Large Screen Nav Bar-->
+    <div>
+    	<div class="nav">
+    		<img src="images/nav_logo_v1.png" alt="Nav Logo" class="nav_logo">
+    		<a href="javascript:void(0);" onClick="dropdownlinksFunction()">Dunedin Schools<img src="images/arrow_down.png" id="down" class="arrow"><img src="images/arrow_up.png" id="up" class="arrow"></a>
+    		<a href="studentville.html" class="active">Student Life</a>
+    		<a href="index.html">Home</a>
+    	</div>
+        <div id="drop_down_links">
+			<a href="obhs.html">OBHS</a>
+            <a href="oghs.html">OGHS</a>
+            <a href="kings.html">Kings</a>
+            <a href="queens.html">Queens</a>
+            <a href="logan_park.html">Logan Park</a>
+		</div>
+    </div>
+    <script>
+        function dropdownlinksFunction() {
+          var x = document.getElementById("drop_down_links");
+          var d = document.getElementById("down");
+          var u = document.getElementById("up");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            d.style.display = "inline";
+            u.style.display = "none";
+          } else {
+            x.style.display = "block";
+            d.style.display = "none";
+            u.style.display = "inline";
+          }
+        }
+    </script>
     <div class="main_content">
         <div class="parallax_studentville" title=""></div>
         <div class="img_note">Source: <a href="https://www.flickr.com/photos/dccarchives/14678386804/" target="_blank">Dunedin City Concile Flickr</a></div>
