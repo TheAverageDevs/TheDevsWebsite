@@ -44,46 +44,130 @@
     margin-left: 5px;
 }
 
+/*-- Mobile project links --*/
+
+#mobile_fold_out {
+    display: none;
+}
+
+#mobile_fold_out {
+    width: 70%;
+    background-color: #111;
+    opacity: 0.7;
+    position: fixed;
+    left: 0;
+}
+
+#mobile_fold_out:hover {
+    opacity: 0.9;
+}
+
+#mobile_fold_out a {
+    width: 50%;
+    float: left;
+    padding: 14px 0;
+    text-align: center;
+}
+
+.arrow_mobile {
+    height: 10px;
+    margin-left: 10px;
+}
+
+#right {
+    display: none;
+}
+
+#left {
+    display: inline;
+}
+
+#mobile_links {
+    width: 30%;
+    right: 0;
+    background-color: #111;
+    position: fixed;
+}
+
 /*---- Standard Navbar ----*/
 
 .nav {
-	position: sticky;
-	top: 0;
-}
-
-.nav {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #111;
-}
-
-.nav a {
-	font-size: 120%;
-	font-family: 'Noto Sans', sans-serif;
-	display: block;
-	color: #FFFFFF;
-	text-align: center;
-	padding: 45px 16px ;
-	text-decoration: none;
-    float: right;
-}
-
-.nav a:hover {
-	background-color: #ddd;
-    color: #111;
+    overflow: hidden;
+    background-color: #111;
+    top: 0;
+    position: sticky;
 }
 
 .nav_logo {
-    padding-top: 25px;
+	padding: 25px 0 15px 0;
 	margin-left: 15px;
 	width: auto;
 	height: 60px;
     float: left;
 }
 
+/*-- New Nav (Replaces dropdown links) --*/
+
+#drop_down_links {
+    top: 100px;
+    position: fixed;
+    width: 100%;
+    height: 63px;
+    background-color: #111;
+    opacity: 0.7;
+}
+
+#drop_down_links {
+    display: none;
+}
+
+#drop_down_links:hover {
+    opacity: 0.9;
+}
+
+#drop_down_links a {
+    width: 25%;
+    display: block;
+    padding: 20px 0;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+}
+
+#drop_down_links a:hover {
+    background-color: gray;
+}
+
+.nav a {
+    float: right;
+    text-decoration: none;
+	padding: 33px 13px;
+    font-size: 30px;
+	color: #FFFFFF;
+}
+
+.nav a:hover {
+    background-color: gray;
+    color: #FFF;
+}
+
+.arrow {
+    height: 20px;
+    margin-left: 10px;
+}
+
+#down {
+    display: inline;
+}
+
+#up {
+    display: none;
+}
+
 /*--- Active class ---*/
-/* Changes background-color for the link of the current page you are on */
+
 .active {
 	background-color: darkgray;
 }
