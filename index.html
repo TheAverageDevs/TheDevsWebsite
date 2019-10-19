@@ -14,7 +14,7 @@
 	<link rel="icon" href="images/favicom/favicom_v2.png">
 </head>
 <body>
-   <!-- Mobile Navigation Menu -->
+    <!-- Mobile Navigation Menu -->
     <div class="mobile_nav">
         <img src="images/nav_logo_v1.png" alt="Nav Logo" class="mobile_nav_logo">
         <div id="mobile_links">
@@ -60,12 +60,38 @@
           }
         }
     </script>
-	<div class="nav">
-		<img src="images/nav_logo_v1.png" alt="Nav Logo" class="nav_logo">
-		<a href="logan_park.html">Dunedin Schools (LP)</a>
-		<a href="studentville.html">Student Life</a>
-		<a href="index.html" class="active">Home</a>
-	</div>
+    <!-- Large Screen Nav Bar-->
+    <div>
+    	<div class="nav">
+    		<img src="images/nav_logo_v1.png" alt="Nav Logo" class="nav_logo">
+    		<a href="javascript:void(0);" onClick="dropdownlinksFunction()">Dunedin Schools<img src="images/arrow_down.png" id="down" class="arrow"><img src="images/arrow_up.png" id="up" class="arrow"></a>
+    		<a href="studentville.html">Student Life</a>
+    		<a href="index.html" class="active">Home</a>
+    	</div>
+        <div id="drop_down_links">
+			<a href="obhs.html">OBHS</a>
+            <a href="oghs.html">OGHS</a>
+            <a href="kings.html">Kings</a>
+            <a href="queens.html">Queens</a>
+            <a href="logan_park.html">Logan Park</a>
+		</div>
+    </div>
+    <script>
+        function dropdownlinksFunction() {
+          var x = document.getElementById("drop_down_links");
+          var d = document.getElementById("down");
+          var u = document.getElementById("up");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            d.style.display = "inline";
+            u.style.display = "none";
+          } else {
+            x.style.display = "block";
+            d.style.display = "none";
+            u.style.display = "inline";
+          }
+        }
+    </script>
 
     <div class="main_content">
         <div class="parallax_index" title="Dunedin Rail Way Station"></div>
@@ -74,16 +100,17 @@
         <h1>Dunedin History</h1>
 
   		<p>Welcome to our Dunedin History website. We are a group of three highschool students who want to use our skills to help others learn about the fantastic town of Dunedin. </p>
-	    	<p>Dunedin is located in the south island of New Zealand and is known for the student life and the historic gold rush.<p>
+   	    <p>Dunedin is located in the south island of New Zealand and is known for the student life and the historic gold rush.<p>
 
-   <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d177788.61068357856!2d170.3870342468678!3d-45.87236910833664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82be4e00f5f513d%3A0x500ef8684799941!2sDunedin!5e0!3m2!1sen!2snz!4v1570576805378!5m2!1sen!2snz" frameborder="0" allowfullscreen=""></iframe>
-	    	<p>Want to help us out with our website? Send your ideas, feedback and information to our email TheAverageDevs@gmail.com and we will be happy to add it to our website.<p>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d177788.61068357856!2d170.3870342468678!3d-45.87236910833664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82be4e00f5f513d%3A0x500ef8684799941!2sDunedin!5e0!3m2!1sen!2snz!4v1570576805378!5m2!1sen!2snz" frameborder="0" allowfullscreen=""></iframe>
+
+        <p>Want to help us out with our website? Send your ideas, feedback and information to our email TheAverageDevs@gmail.com and we will be happy to add it to our website.<p>
     </div>
 	<footer>
         <div class="footer_nav_links">
             <a href="index.html">Home</a> | <a href="studentville.html">Student Life</a> | <a href="logan_park.html">Dunedin Schools(LP)</a>
         </div>
-		<p>Site developed and maintained by TheAverageDevs Â© 2019</p>
+		<p>Site developed and maintained by TheAverageDevs © 2019</p>
 		<p>Contact us at TheAverageDevs@gmail.com </p>
         <div class="footer_external_links">
             <a href="landing_page.html" target="_blank">Landing Page</a>
