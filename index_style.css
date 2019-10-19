@@ -21,6 +21,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+}
+
+/*---- Paralax ----*/
+
+.parallax_index2 {
+  /* The image used */
+  background-image: url("images/dcc_flickr_img/14678386804_7cfe924d92_o.jpg");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*---- Scaling ----*/
 /*-- Mobile --*/
