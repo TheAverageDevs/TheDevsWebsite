@@ -6,4 +6,5 @@ This website aims to
   1. Provide humor and a spark of life to the dreary town of Dunedin.
   2. Be a project for bored school students.
   3. Be useful.
+  4. Also to preserve and show the currunt and past history of dunedin bogans for future generations lol.
 These aims are in the order they are given emphasis to. Please feel free to contribute if you want.
