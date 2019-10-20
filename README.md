@@ -1,4 +1,9 @@
 # TheDevsWebsite
 The Webs Debsite
 Here is the sourcecode for the Dunedin website as developed by the TheDevTeam
-This website is intended to be a somewhat true to local impression on the Dunedin town village, as seen by cinical locals lol.
+This website is intended to be a somewhat true to local impression on the Dunedin town village, as seen by cynical locals lol.
+This website aims to
+  1. Provide humor and a spark of life to the dreary town of Dunedin.
+  2. Be a project for bored school students.
+  3. Be useful.
+These aims are in the order they are given emphasis to. Please feel free to contribute if you want.
