@@ -6,7 +6,8 @@
 
 .parallax_bogan_park {
   /* The image used */
-  background-image: url("images/logan_park_def.jpg");
+  /*background-image: url("images/logan_park_def.jpg");*/
+  background-color: gray;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;

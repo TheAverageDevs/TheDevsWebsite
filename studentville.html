@@ -8,6 +8,8 @@
     <link href="main_style.css" rel="stylesheet" type="text/css">
     <link href="nav_style.css" rel="stylesheet" type="text/css">
     <link href="style_studentville.css" rel="stylesheet" type="text/css">
+	<!-- Script -->
+    <link href="nav_script.js" rel="stylesheet" type="text/js">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Favicon -->
@@ -18,38 +20,53 @@
     <div class="mobile_nav">
         <img src="images/nav_logo_v1.png" alt="Nav Logo" class="mobile_nav_logo">
         <div id="mobile_links">
-            <a href="index.html"  class="active">Home</a>
-            <a href="studentville.html">Student Life</a>
-            <a href="logan_park.html">Dunedin Schools (LP)</a>
+            <a href="index.html">Home</a>
+            <a href="studentville.html" class="active">Student Life</a>
+            <a href="javascript:void(0);" onClick="mobileprojectFunction()">Dunedin Schools<img src="images/arrow_left.png" id="left" class="arrow_mobile"><img src="images/arrow_right.png" id="right" class="arrow_mobile"></a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="mobileFunction()">
             <i class="fa fa-bars"></i>
         </a>
+        <div id="mobile_fold_out">
+            <a href="obhs.html">OBHS</a>
+            <a href="oghs.html">OGHS</a>
+            <a href="kings.html">Kings</a>
+            <a href="queens.html">Queens</a>
+            <a href="logan_park.html">Logan Park</a>
+        </div>
     </div>
 
-    <script>
-    function mobileFunction() {
-      var x = document.getElementById("mobile_links");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-    </script>
-	<div class="nav">
-		<img src="images/nav_logo_v1.png" alt="Nav Logo" class="nav_logo">
-		<a href="logan_park.html">Dunedin Schools (LP)</a>
-		<a href="studentville.html" class="active">Student Life</a>
-		<a href="index.html">Home</a>
-	</div>
+    <!-- Large Screen Nav Bar-->
+    <div>
+    	<div class="nav">
+    		<img src="images/nav_logo_v1.png" alt="Nav Logo" class="nav_logo">
+    		<a href="javascript:void(0);" onClick="dropdownlinksFunction()">Dunedin Schools<img src="images/arrow_down.png" id="down" class="arrow"><img src="images/arrow_up.png" id="up" class="arrow"></a>
+    		<a href="studentville.html" class="active">Student Life</a>
+    		<a href="index.html">Home</a>
+    	</div>
+        <div id="drop_down_links">
+			<a href="obhs.html">OBHS</a>
+            <a href="oghs.html">OGHS</a>
+            <a href="kings.html">Kings</a>
+            <a href="queens.html">Queens</a>
+            <a href="logan_park.html">Logan Park</a>
+		</div>
+    </div>
+
     <div class="main_content">
         <div class="parallax_studentville" title=""></div>
         <div class="img_note">Source: <a href="https://www.flickr.com/photos/dccarchives/14678386804/" target="_blank">Dunedin City Concile Flickr</a></div>
 
-        <h1>Student Ville</h1>
-        <p>Studentville is a rundown area of Dunedin clollikwally called studentville, as it is populated solely by partygoing students lol.</p>
-        <p>Follow this link to get more knowledge on where studentville is located than anyone (except for you, you gloryios barstad) wanted to know. <a href="https://goo.gl/maps/d6yu4NqvgtspN49NA">Hyde street, centre of neevle</a> Go to streetview- If you dare...</p>
+        <h1>Student Life</h1>
+        <p>Dunedin is well known for the student life, from the parties to the great education at Otago University. Dunedin has a great student vibe which brings in many new students each year who want to experience the greatness of being a Dunedin student.</p>
+        <p>Dunedin offers many different experiences for their students which help them learn and get inspired to become successful in the future. Otago University offers many courses too Dunedin students, these range from arts and science to health.</p>
+	<br> #Want to change out for a paralax sometime
+	<p>The Otago University campus. The Otago University campus is designed to allow students to take their learning outside and enjoy the nature that the amazing campus offers while at the same time having a comfy space to get their studies done.</p>
+	<p>Dunedin Students are known to be party freaks. The notorious Hyde Street party is known as Dunedin's greatest street party with hundreds of students who attend. This party brings the students together to celebrate their success and just have a great time.</p>
+	<br>
+	<p>Want more information on Otago University? Click the link below.</p>
+	<a href="https://www.otago.ac.nz/" target="_blank">Otago University</a>    
+	    
    </div>
 	<footer>
         <div class="footer_nav_links">
