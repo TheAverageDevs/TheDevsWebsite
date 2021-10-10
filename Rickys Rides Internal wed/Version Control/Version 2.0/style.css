@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: black;
+}
+
+
+
+/* Accordion */
+.accordion {
+  background-color: #FEBE26;
+  color: white;
+  cursor: pointer;
+  width: 60%;
+  text-align: center;
+  outline: none;
+  font-size: 25px;
+  transition: 0.4s; 
+  border: solid;
+  text-align: center;
+  margin: auto;
+  display: block;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 59%;
+  padding-top: -10px;
+  border: solid;
+  margin: auto;
+  border-radius: 15px;
+}
+
+input[type=text] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=tel] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:invalid {
+	background-color: pink;
+}
+input[readonly] {
+	background-color: lightyellow;
+}
+input[type="range"] {
+	width: 280px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+.topnav img {
+	float: left;
+	height: 100px;
+	padding-left: 25px;
+}
+.bookbar {
+  overflow: hidden;
+  background-color: #5E5E5E;
+  text-align: center;
+}
+
+.bookbar p {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+  .bookbar.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+.bookbar img {
+	float: left;
+	height: 100px;
+	padding-left: 25px;
+}
+.infobar {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: black;
+   text-align: center;
+   display: block;
+   font-size: 20px;
+   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  
+}
+@media screen and (max-width: 920px) {
+	.accordion {
+		width: 90%;
+	}
+	.panel {
+		width: 89%;
+	}
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("Images/car_driving.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+/* Good Links
+https://codepen.io/ig_design/details/dLNKgM
+https://codepen.io/andiio/pen/tFECp
+https://codepen.io/maizzle/pen/zmjjyJ
